@@ -7,7 +7,9 @@ function noInput(num1, num2) {
 //Buisiness Logic
 
 function countUpBy (countBy, countTo) {
-  noInput(countBy, countTo);
+  if (noInput(countBy, countTo)) {
+    return 0;
+  }
   let multiples = [];
   for (let i = countBy; i <= countTo; i += countBy) {
     multiples.push(i);
