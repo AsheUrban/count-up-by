@@ -31,6 +31,17 @@ if (noInput(countBy, countTo)) {
    return 0;
 Expected output: 0
 
+Test: "It should return NaN is not a number."
+Code: 
+if (countBy.parseInt() === NaN || countTo.parseInt() === NaN) {
+    return NaN;
+Expected ouput: NaN
+
+Test: "It should return "Please don't" if countBy is <= 1 or countTo <= 0."
+Code:
+ if (parseInt(countBy) <= 1 || parseInt(countTo) <= 0) {
+    return "Please don't";
+Expected output: "Please don't"
 
 
 
